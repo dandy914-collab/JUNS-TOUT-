@@ -207,8 +207,10 @@ figure{margin:0}
 .closing .right b{display:block; font-size:12.5px; color:#fff; letter-spacing:.04em}
 .contact{margin-top:20px}
 .contact .cap{display:block; font-size:10.5px; letter-spacing:.16em; color:var(--gold-lt)}
-.contact a{display:inline-block; margin-top:6px; font-size:21px; font-weight:700; color:#fff; text-decoration:none; letter-spacing:.01em; border-bottom:1px solid rgba(200,155,60,.5); padding-bottom:2px}
-.contact .s{font-size:11.5px; color:var(--gold-pale); margin-top:8px}
+.contact a{display:block; width:max-content; max-width:100%; text-decoration:none; -webkit-tap-highlight-color:rgba(200,155,60,.25)}
+.contact .tel{margin-top:7px; font-size:25px; font-weight:700; color:#fff; letter-spacing:.02em; border-bottom:1px solid rgba(200,155,60,.55); padding-bottom:3px}
+.contact .mail{margin-top:9px; font-size:14.5px; font-weight:600; color:var(--gold-pale); letter-spacing:.01em}
+.contact .s{font-size:11.5px; color:var(--gold-pale); margin-top:12px}
 .credit{margin-top:24px; padding-top:16px; border-top:1px solid rgba(255,255,255,.16); font-size:10.5px; line-height:1.85; color:rgba(255,255,255,.55); letter-spacing:0}
 .credit b{color:rgba(255,255,255,.72); font-weight:500}
 .copyright{margin-top:10px; font-size:10.5px; color:rgba(255,255,255,.4); letter-spacing:.04em}
@@ -216,9 +218,10 @@ figure{margin:0}
 /* ── 하단 고정 바 ──────────────────────────────────── */
 .dock{position:fixed; left:0; right:0; bottom:0; z-index:50; display:flex; gap:8px; padding:9px 12px calc(9px + env(safe-area-inset-bottom));
   background:rgba(15,33,55,.94); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); max-width:var(--max); margin:0 auto}
-.dock button,.dock a{flex:1; border:0; border-radius:2px; font-family:inherit; font-size:14px; font-weight:700; letter-spacing:-.01em; padding:13px 8px; text-align:center; text-decoration:none; cursor:pointer; transition:opacity .2s}
+.dock button,.dock a{flex:1; border:0; border-radius:2px; font-family:inherit; font-size:14px; font-weight:700; letter-spacing:-.01em; padding:13px 8px; text-align:center; text-decoration:none; cursor:pointer; transition:opacity .2s; display:flex; align-items:center; justify-content:center; white-space:nowrap}
+.dock .tel{flex:1.6; background:var(--gold); color:#20180A; font-size:15px}
+.dock .tel .ico{margin-right:6px}
 .dock .share{background:rgba(255,255,255,.12); color:#fff}
-.dock .mail{background:var(--gold); color:#20180A}
 .dock button:active,.dock a:active{opacity:.75}
 .pad-dock{height:64px}
 .toast{position:fixed; left:50%; bottom:88px; transform:translateX(-50%) translateY(8px); background:rgba(28,40,54,.95); color:#fff; font-size:13px; padding:10px 16px; border-radius:3px; opacity:0; pointer-events:none; transition:.25s; z-index:60; white-space:nowrap}
@@ -563,8 +566,9 @@ figure{margin:0}
       </div>
     </div>
     <div class="contact">
-      <span class="cap">대표자 직통 문의 · 카카오메일</span>
-      <a href="mailto:junstour@kakao.com">junstour@kakao.com</a>
+      <span class="cap">대표자 직통 문의</span>
+      <a class="tel" href="tel:+821089860978">010-8986-0978</a>
+      <a class="mail" href="mailto:junstour@kakao.com?subject=%5B%EC%A4%80%EC%8A%A4%ED%88%AC%EC%96%B4%5D%20%EB%9D%BC%EC%98%A4%EC%8A%A4%203%EB%B0%95%205%EC%9D%BC%20%EB%AC%B8%EC%9D%98">junstour@kakao.com</a>
       <p class="s">JUN&rsquo;S TOUR · 여행의 순간을 더 특별하게</p>
     </div>
     <p class="credit">
@@ -579,8 +583,8 @@ figure{margin:0}
 
 <!-- ── 하단 고정 바 ────────────────────────────────── -->
 <div class="dock">
+  <a class="tel" href="tel:+821089860978"><span class="ico">📞</span>전화 문의</a>
   <button type="button" class="share" id="shareBtn">링크 공유하기</button>
-  <a class="mail" href="mailto:junstour@kakao.com?subject=%5B%EC%A4%80%EC%8A%A4%ED%88%AC%EC%96%B4%5D%20%EB%9D%BC%EC%98%A4%EC%8A%A4%203%EB%B0%95%205%EC%9D%BC%20%EB%AC%B8%EC%9D%98">메일로 문의</a>
 </div>
 <div class="toast" id="toast">링크를 복사했습니다</div>
 
