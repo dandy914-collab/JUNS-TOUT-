@@ -20,10 +20,10 @@
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="준스투어 | 라오스 비엔티안·방비엥 3박 5일">
-<meta name="twitter:description" content="2027.01.18~22 · 14명 단독 행사 · NO 팁·NO 옵션 · 1인 132~135만원">
+<meta name="twitter:description" content="2027.01.18~22 · 14명 단독 행사 · 비엔티안 5성급·방비엥 4성급 · NO 팁·NO 옵션 · 1인 132~135만원">
 <meta name="twitter:image" content="https://dandy914-collab.github.io/JUNS-TOUT-/laos-2027-01/assets/og.jpg">
 
-<meta name="description" content="2027년 1월 18일~22일, 라오스 비엔티안·방비엥 3박 5일. 14명 단독 행사 · 현지 옵션 전액 포함 · NO 팁 · NO 옵션 · 1인 132~135만원. 준스투어 대표 인솔자 전 일정 동행.">
+<meta name="description" content="2027년 1월 18일~22일, 라오스 비엔티안·방비엥 3박 5일. 비엔티안 5성급 · 방비엥 4성급 호텔. 14명 단독 행사 · 현지 옵션 전액 포함 · NO 팁 · NO 옵션 · 1인 132~135만원. 준스투어 대표 인솔자 전 일정 동행.">
 <meta name="theme-color" content="#0F2137">
 <meta name="format-detection" content="telephone=no">
 <link rel="canonical" href="https://dandy914-collab.github.io/JUNS-TOUT-/laos-2027-01/">
@@ -88,9 +88,11 @@ h2{font-family:'Noto Serif KR','Nanum Myeongjo',serif; font-size:27px; margin-to
 /* ── 요약 카드 ─────────────────────────────────────── */
 .summary{position:relative; z-index:4; margin:-58px var(--pad) 0; background:var(--paper); border:1px solid var(--line); box-shadow:0 18px 40px rgba(15,33,55,.13); padding:24px 20px 18px}
 .summary .cap{font-size:11px; font-weight:700; letter-spacing:.16em; color:var(--gold)}
-.price{display:flex; flex-wrap:wrap; align-items:flex-end; gap:2px 6px; margin:6px 0 2px; color:var(--navy)}
-.price .num{font-family:'Noto Serif KR',serif; font-size:clamp(21px,6.4vw,29px); font-weight:600; letter-spacing:-.02em; line-height:1.2; white-space:nowrap}
-.price .unit{font-size:14px; font-weight:500; padding-bottom:5px; color:var(--navy)}
+.price{display:flex; flex-direction:column; margin:6px 0 4px; color:var(--navy)}
+.price .row{display:flex; align-items:baseline; gap:7px}
+.price .num{font-family:'Noto Serif KR',serif; font-size:clamp(31px,9.4vw,42px); font-weight:600; letter-spacing:-.035em; line-height:1.16; white-space:nowrap; font-variant-numeric:tabular-nums}
+.price .sep{font-size:clamp(17px,4.6vw,22px); font-weight:500; color:var(--gold); line-height:1.16}
+.price .unit{font-size:clamp(15px,4.4vw,19px); font-weight:600; color:var(--navy); padding-bottom:6px; margin-left:-3px}
 .price-note{font-size:12.5px; color:var(--muted); letter-spacing:-.01em}
 .facts{display:grid; grid-template-columns:1fr 1fr; gap:0; margin-top:18px; border-top:1px solid var(--line)}
 .facts div{padding:13px 0 11px; border-bottom:1px solid var(--line)}
@@ -256,7 +258,7 @@ figure{margin:0}
       <div class="hero-kicker"><span class="bar"></span><span>프라이빗 여행 · 2027 겨울</span></div>
       <h1>라오스</h1>
       <p class="hero-sub">비엔티안 · 방비엥</p>
-      <p class="hero-copy">비엔티안 5성급 · 방비엥 호텔 2곳 중 택1</p>
+      <p class="hero-copy">비엔티안 5성급 · 방비엥 4성급 2곳 중 택1</p>
       <p class="hero-copy2">14명 단독 행사 · 준스투어 대표 인솔자 전 일정 동행</p>
       <div class="hero-foot">
         <span class="date">2027. 01. 18 (월) — 01. 22 (금)</span>
@@ -268,13 +270,16 @@ figure{margin:0}
   <!-- ── 요약 ─────────────────────────────────────── -->
   <div class="summary">
     <span class="cap">예상 경비 · 1인</span>
-    <div class="price"><span class="num">1,320,000 ~ 1,350,000</span><span class="unit">원</span></div>
+    <div class="price">
+      <span class="row"><span class="num">1,320,000</span><span class="sep">~</span></span>
+      <span class="row"><span class="num">1,350,000</span><span class="unit">원</span></span>
+    </div>
     <p class="price-note">호텔 3박 · 식사 100% · 현지 옵션 전액 포함</p>
     <dl class="facts">
       <div><dt>여행 기간</dt><dd>2027.01.18(월)~22(금)<br>3박 5일</dd></div>
       <div><dt>인원 · 구성</dt><dd>14명 단독 행사<br>대표 인솔자 동행</dd></div>
       <div><dt>항공</dt><dd>트리니티 항공 직항<br>좌석 3:3 · 기내식 없음</dd></div>
-      <div><dt>숙박</dt><dd>S방비엥 호텔 또는<br>타비숙 아일랜드 호텔</dd></div>
+      <div><dt>숙박</dt><dd>방비엥 4성급 호텔<br>2곳 중 배정</dd></div>
     </dl>
   </div>
 
@@ -295,7 +300,7 @@ figure{margin:0}
       <div><dt>여행 기간</dt><dd>2027. 01. 18(월) ~ 01. 22(금)<span class="sub">3박 5일</span></dd></div>
       <div><dt>인원 · 구성</dt><dd>14명 단독 행사<span class="sub">준스투어 대표 인솔자 전 일정 동행</span></dd></div>
       <div><dt>항공</dt><dd>트리니티 항공(구 티웨이항공) 직항<span class="sub">좌석 배열 3:3 · 기내식 없음</span></dd></div>
-      <div><dt>숙박</dt><dd>비엔티안 유은호텔(5성급) · 방비엥은 S방비엥 호텔 또는 타비숙 아일랜드 호텔<span class="sub">2인 1실 · 3박</span></dd></div>
+      <div><dt>숙박</dt><dd>비엔티안 유은호텔(5성급) · 방비엥은 S방비엥 호텔 또는 타비숙 아일랜드 호텔(4성급)<span class="sub">2인 1실 · 3박 · 방비엥 두 곳 모두 4성급</span></dd></div>
       <div><dt>예상 경비</dt><dd><b>1인 1,320,000 ~ 1,350,000원</b></dd></div>
     </dl>
 
@@ -331,7 +336,7 @@ figure{margin:0}
     <div class="inc-block" style="margin-top:0">
       <h3>포함 사항 <span class="n">6가지 모두 상품가에 포함</span></h3>
       <ul class="checks">
-        <li>호텔 3박(2인 1실) · 방비엥은 S방비엥 호텔 또는 타비숙 아일랜드 호텔 · 식사 100% 포함</li>
+        <li>호텔 3박(2인 1실) · 방비엥은 S방비엥 호텔 또는 타비숙 아일랜드 호텔(4성급) · 식사 100% 포함</li>
         <li>전용 차량 · 기사 및 가이드 팁</li>
         <li>관광허가서 및 관광지 입장료</li>
         <li>7대 액티비티 체험 비용 전액</li>
@@ -438,7 +443,7 @@ figure{margin:0}
       <figure class="ph"><img src="assets/img/buddha-park.jpg" width="900" height="1125" alt="부다파크의 거대한 불상" loading="lazy"><figcaption>부다파크 — 힌두상과 불상의 정원</figcaption></figure>
       <dl class="meta">
         <div><dt>식사</dt><dd>조식 호텔식 · 중식 선상식 · 석식 한식</dd></div>
-        <div><dt>숙박</dt><dd>S방비엥 호텔 또는 타비숙 아일랜드 호텔 (동급)</dd></div>
+        <div><dt>숙박</dt><dd>S방비엥 호텔 또는 타비숙 아일랜드 호텔<br>(4성급 · 동급 가능)</dd></div>
       </dl>
     </article>
 
@@ -470,7 +475,7 @@ figure{margin:0}
       </ul>
       <dl class="meta">
         <div><dt>식사</dt><dd>조식 호텔식 · 중식 현지식 · 석식 한식</dd></div>
-        <div><dt>숙박</dt><dd>S방비엥 호텔 또는 타비숙 아일랜드 호텔</dd></div>
+        <div><dt>숙박</dt><dd>S방비엥 호텔 또는 타비숙 아일랜드 호텔<br>(4성급)</dd></div>
       </dl>
       <p class="note" style="margin-top:14px">7대 액티비티 · 전신마사지 3회 · 전용 차량 · 기사/가이드 팁 — 모두 상품가에 포함되어 있습니다.</p>
     </article>
@@ -519,23 +524,25 @@ figure{margin:0}
         <a class="site" href="https://www.google.com/maps/search/?api=1&amp;query=Vientiane%20Yooeun%20Hotel&amp;query_place_id=ChIJZVmKNDdnJDERJk8rLnkpK3M" target="_blank" rel="noopener noreferrer"><span class="tag">지도</span>호텔 위치 · 정보 보기<span class="ar">→</span></a>
       </div>
       <div class="hotel">
-        <span class="city">방비엥</span>
+        <span class="city">방비엥 · 4성급</span>
         <div class="sub" style="margin-top:10px;padding-top:0;border-top:0">
           <p class="name">S방비엥 호텔</p>
-          <p class="en">S Vangvieng Boutique Hotel · 4성급</p>
+          <p class="en">S Vangvieng Boutique Hotel</p>
+          <p class="stars">★★★★<span>4성급 · 2박 중 배정</span></p>
           <a class="site" href="https://svbhotel.com/" target="_blank" rel="noopener noreferrer"><span class="tag">공식</span>공식 홈페이지<span class="ar">→</span></a>
         </div>
         <p style="margin-top:16px;text-align:center;font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--gold)">또는</p>
         <div class="sub" style="margin-top:10px;padding-top:10px">
           <p class="name">타비숙 아일랜드 호텔</p>
           <p class="en">Thavisouk Island Hotel &amp; Resort</p>
+          <p class="stars">★★★★<span>4성급 · 2박 중 배정</span></p>
           <a class="site" href="https://www.google.com/maps/search/?api=1&amp;query=Thavisouk%20Island%20Hotel%20%26%20Resort&amp;query_place_id=ChIJyZPF0lKTJTERL_XXv8Cn6Fc" target="_blank" rel="noopener noreferrer"><span class="tag">지도</span>호텔 위치 · 정보 보기<span class="ar">→</span></a>
         </div>
-        <p class="note">2인 1실 · 2박 · S방비엥 호텔 또는 타비숙 아일랜드 호텔 중 배정</p>
+        <p class="note">2인 1실 · 2박 · S방비엥 호텔 또는 타비숙 아일랜드 호텔 중 배정 (두 곳 모두 4성급)</p>
       </div>
     </div>
 
-    <p class="note" style="margin-top:14px">방비엥 2박은 S방비엥 호텔 또는 타비숙 아일랜드 호텔 중 한 곳에 배정되며(두 곳 모두 투숙하는 일정이 아닙니다), 현지 사정에 따라 동급 호텔로 변경될 수 있습니다.<br>S방비엥 호텔은 야외 수영장 · 루프탑 바 · 레스토랑 · 피트니스를 갖추고 있습니다.</p>
+    <p class="note" style="margin-top:14px">방비엥 2박은 S방비엥 호텔 또는 타비숙 아일랜드 호텔 중 한 곳에 배정됩니다(두 곳 모두 4성급). 두 곳 모두 투숙하는 일정이 아니며, 현지 사정에 따라 동급 호텔로 변경될 수 있습니다.<br>S방비엥 호텔은 야외 수영장 · 루프탑 바 · 레스토랑 · 피트니스를 갖추고 있습니다.</p>
 
     <div class="inc-block" style="margin-top:34px">
       <h3>여행 전 확인 사항 <span class="n">꼭 확인해 주세요</span></h3>
@@ -567,7 +574,7 @@ figure{margin:0}
         <b>2027. 01. 18 — 01. 22</b>
         3박 5일 · 14명 단독 행사<br>
         라오스 비엔티안 · 방비엥<br>
-        비엔티안 5성급 · 방비엥 호텔 택1
+        비엔티안 5성급 · 방비엥 4성급
       </div>
     </div>
     <div class="contact">
