@@ -74,6 +74,7 @@ h2{font-family:'Noto Serif KR','Nanum Myeongjo',serif; font-size:27px; margin-to
 .hero-kicker{display:flex; align-items:center; gap:12px; margin-bottom:14px}
 .hero-kicker .bar{width:34px; height:1px; background:var(--gold-lt)}
 .hero-kicker span{font-size:11px; letter-spacing:.22em; font-weight:500; color:var(--gold-pale)}
+.hero-flag{display:inline-block; margin:0 0 14px; padding:6px 14px 7px; background:var(--gold); color:#141F30; font-size:15px; font-weight:700; letter-spacing:.16em; line-height:1.25}
 .hero h1{font-family:'Noto Serif KR',serif; font-weight:400; font-size:58px; line-height:1.1; letter-spacing:.06em; margin:0 0 6px}
 .hero-sub{font-family:'Noto Serif KR',serif; font-size:23px; font-weight:400; letter-spacing:.01em; color:rgba(255,255,255,.95); margin-bottom:16px}
 .hero-copy{font-size:14.5px; font-weight:700; letter-spacing:.01em; color:var(--gold-pale); margin-bottom:6px}
@@ -188,10 +189,6 @@ figure{margin:0}
 .hotel .stars span{color:var(--muted); letter-spacing:-.01em; margin-left:8px}
 .hotel .sub{margin-top:15px; padding-top:15px; border-top:1px solid var(--line)}
 .hotel .sub .name{margin-top:0}
-.site{display:inline-flex; align-items:center; gap:8px; margin-top:11px; padding:9px 14px; border:1px solid var(--gold-pale); background:#FCFAF5; color:var(--navy); font-size:12.5px; font-weight:700; letter-spacing:-.01em; line-height:1.5; text-decoration:none; -webkit-tap-highlight-color:rgba(200,155,60,.18)}
-.site .ar{color:var(--gold); font-weight:700; transform:translateY(-.5px)}
-.site .tag{font-size:10.5px; font-weight:700; letter-spacing:.06em; color:var(--gold)}
-.site:active{background:var(--ivory); border-color:var(--gold)}
 .hotel .note{font-size:11.5px; color:var(--muted); margin-top:12px; line-height:1.6}
 .pool{margin-top:22px; background:var(--ivory); padding:18px 16px}
 .pool .h{font-size:14.5px; font-weight:700; color:var(--navy)}
@@ -257,6 +254,7 @@ figure{margin:0}
     </div>
     <div class="hero-body">
       <div class="hero-kicker"><span class="bar"></span><span>프라이빗 여행 · 2027 겨울</span></div>
+      <p class="hero-flag">준스투어 단독</p>
       <h1>라오스</h1>
       <p class="hero-sub">비엔티안 · 방비엥</p>
       <p class="hero-copy">비엔티안 5성급 · 방비엥 4성급</p>
@@ -300,7 +298,8 @@ figure{margin:0}
       <div><dt>여행 기간</dt><dd>2027. 01. 18(월) ~ 01. 22(금)<span class="sub">3박 5일</span></dd></div>
       <div><dt>인원 · 구성</dt><dd>17명 단독 행사<span class="sub">인솔자 전 일정 동행 · 2인 1실</span></dd></div>
       <div><dt>항공</dt><dd>트리니티 항공(구 티웨이항공) TW0131 / TW0132<span class="sub">좌석 배열 3:3 · 기내식 없음</span></dd></div>
-      <div><dt>집결</dt><dd>15:00 문산 뚝방 주차장 (집결)<span class="sub">16:35 인천공항 제1여객터미널 B카운터 앞 (개별출발)</span></dd></div>
+      <div><dt>문산 출발</dt><dd>15:00 문산 뚝방 주차장 집결<span class="sub">전용차량으로 인천공항 이동 · 시간 엄수</span></dd></div>
+      <div><dt>개별 출발</dt><dd>16:35 인천국제공항 제1여객터미널(T1) B카운터 앞 미팅<span class="sub">인천공항에서 바로 만나는 일정</span></dd></div>
       <div><dt>숙박</dt><dd>비엔티안 유은호텔(5성급) · 방비엥은 타비숙 아일랜드 호텔 또는 동급(4성급)<span class="sub">2인 1실 · 3박 · 방비엥 2박 4성급</span></dd></div>
       <div><dt>확정 금액</dt><dd><b>1인 1,320,000원</b> (확정금액)<span class="sub">싱글차지(1인 1실) 전일정 15만원</span></dd></div>
     </dl>
@@ -329,7 +328,7 @@ figure{margin:0}
   <!-- ── NO 팁 배너 ───────────────────────────────── -->
   <div class="banner">
     <p class="big">현지 옵션 <em>ALL 포함</em><br>NO 팁<span class="sepdot"></span>NO 옵션</p>
-    <p class="sub">마사지 팁 회당 $4 · 쇼핑 2회</p>
+    <p class="sub">마사지·매너 팁 별도 · 쇼핑 2회</p>
   </div>
 
   <!-- ── 포함 / 불포함 ────────────────────────────── -->
@@ -387,7 +386,7 @@ figure{margin:0}
       <span class="cap" style="font-size:10.5px;letter-spacing:.14em;color:var(--gold);font-weight:700">포함 특전<span style="display:inline-block;width:3px;height:3px;border-radius:50%;background:var(--gold);margin:0 8px 4px;vertical-align:middle"></span>전신마사지</span>
       <p class="h">2일차부터 4일차까지, 하루 한 번</p>
       <p class="v">전신마사지 2시간 × 3회 · 총 6시간</p>
-      <p class="s">팁은 회당 $4 별도입니다</p>
+      <p class="s">마사지 팁·개인 매너팁 별도</p>
     </div>
   </section>
 
@@ -413,8 +412,8 @@ figure{margin:0}
         <div><span class="day-date">01.18 (월)</span><h3>인천 출발 · 비엔티안 도착</h3></div>
       </div>
       <ul>
-        <li><b>15:00</b> 문산 뚝방 주차장 집결 <b>(시간 엄수)</b> · 전용 셔틀 탑승</li>
-        <li><b>16:35</b> 인천공항 제1여객터미널 B카운터 앞 · 출국 수속</li>
+        <li><b>문산 출발</b> — <b>15:00</b> 문산 뚝방 주차장 집결 <b>(시간 엄수)</b> · 전용차량으로 인천공항 이동</li>
+        <li><b>개별 출발</b> — <b>16:35</b> 인천국제공항 제1여객터미널(T1) B카운터 앞 미팅 · 출국 수속</li>
         <li><b>19:35</b> 인천 출발 — 트리니티 131편 (TW0131)</li>
         <li><b>23:15</b> 비엔티안 도착 · 호텔 이동</li>
         <li>야식으로 쌀국수 시식 후 호텔 투숙 및 자유시간</li>
@@ -438,7 +437,7 @@ figure{margin:0}
         <li>방비엥 이동 · 롱테일보트 쏭강변 일몰</li>
         <li>석식 — 닭볶음탕 또는 닭백숙</li>
         <li>유러피안 거리 · 방비엥 야시장 자유시간</li>
-        <li>전신마사지 2시간 (팁 별도 $4)</li>
+        <li>전신마사지 2시간 (팁 별도)</li>
         <li>호텔 투숙 및 자유시간</li>
       </ul>
       <figure class="ph"><img src="assets/img/buddha-park.jpg" width="900" height="1125" alt="부다파크의 거대한 불상" loading="lazy"><figcaption>부다파크 — 힌두상과 불상의 절묘한 어울림</figcaption></figure>
@@ -471,7 +470,7 @@ figure{margin:0}
         <li>카약을 타고 쏭강을 따라 호텔까지 내려오는 카약 레프팅</li>
         <li>블루라군 2에서 수영 · 자유시간 (이름 그대로 푸른 호수, 다이빙도 어울립니다)</li>
         <li>버기카(2인 1대)로 시골길을 달리는 체험</li>
-        <li>전신마사지 2시간 (팁 별도 $4)</li>
+        <li>전신마사지 2시간 (팁 별도)</li>
         <li>석식 — 별헤는 밤 : 별 쏟아지는 야외 BBQ 파티와 풍등(소원등) 날리기</li>
         <li>호텔 투숙 및 자유시간</li>
       </ul>
@@ -493,7 +492,7 @@ figure{margin:0}
         <li>라오스 독립의 상징, 빠뚜싸이 관광</li>
         <li>중식 후 망고의 천국 라오스, 열대과일 체험 시식 · 볼라벤 커피 시음</li>
         <li>석가모니 진신사리가 모셔진 탓루앙 사원</li>
-        <li>전신마사지 2시간 (팁 별도 $4)</li>
+        <li>전신마사지 2시간 (팁 별도)</li>
         <li>석식 후 메콩 야시장 · 수변공원 자유시간</li>
         <li>공항으로 이동</li>
       </ul>
@@ -521,16 +520,14 @@ figure{margin:0}
       <div class="hotel">
         <span class="city">비엔티안</span>
         <p class="name">유은호텔</p>
-        <p class="en">Youen Hotel 또는 동급</p>
+        <p class="en">Youen Hotel 또는 동급 · 5성급</p>
         <p class="stars">★★★★★<span>2인 1실 · 3박 중 1박</span></p>
-        <a class="site" href="https://www.google.com/maps/search/?api=1&amp;query=Vientiane%20Yooeun%20Hotel&amp;query_place_id=ChIJZVmKNDdnJDERJk8rLnkpK3M" target="_blank" rel="noopener noreferrer"><span class="tag">지도</span>호텔 위치 · 정보 보기<span class="ar">→</span></a>
       </div>
       <div class="hotel">
         <span class="city">방비엥 · 4성급</span>
         <p class="name">타비숙 아일랜드 호텔</p>
         <p class="en">Thavisouk Island Hotel &amp; Resort 또는 동급 · 4성급</p>
         <p class="stars">★★★★<span>4성급 · 2박</span></p>
-        <a class="site" href="https://www.google.com/maps/search/?api=1&amp;query=Thavisouk%20Island%20Hotel%20%26%20Resort&amp;query_place_id=ChIJyZPF0lKTJTERL_XXv8Cn6Fc" target="_blank" rel="noopener noreferrer"><span class="tag">지도</span>호텔 위치 · 정보 보기<span class="ar">→</span></a>
         <p class="note">2인 1실 · 2박 · 타비숙 아일랜드 호텔 또는 동급 4성급</p>
       </div>
     </div>
@@ -544,7 +541,7 @@ figure{margin:0}
         <li>일정은 항공 및 현지 사정에 따라 변경될 수 있습니다.</li>
         <li>항공사 사정으로 출발일이 변경될 수 있습니다.</li>
         <li>간단한 쇼핑 2회가 포함된 상품입니다.</li>
-        <li>개인 팁(마사지·카약 사공 등)은 회당 $4 별도입니다.</li>
+        <li>개인 팁(마사지·카약 사공 등)은 별도입니다.</li>
         <li>싱글차지(1인 1실)는 전일정 15만원입니다.</li>
         <li>라오스는 전자담배 반입·소지가 전면 금지입니다.</li>
       </ul>
